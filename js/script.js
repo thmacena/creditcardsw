@@ -4,6 +4,7 @@ card.addEventListener("mousemove", cardEffect);
 card.addEventListener("mouseleave", cardReset);
 card.addEventListener("mouseenter", cardEnter);
 
+
 function cardEffect(event) {
     const cardWidth = card.offsetWidth;
     const cardHeight = card.offsetHeight;
@@ -15,6 +16,7 @@ function cardEffect(event) {
     const rotateX = ((+1) * 25 * positionY / (cardHeight / 2)).toFixed(2);
 
     const rotateY = ((-1) * 25 * positionX / (cardWidth / 2)).toFixed(2);
+
 
 
     card.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
